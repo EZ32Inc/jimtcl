@@ -12475,7 +12475,7 @@ static int Jim_LoopCoreCommand(Jim_Interp *interp, int argc, Jim_Obj *const *arg
 {
     int retval;
     jim_wide i;
-    jim_wide limit;
+    jim_wide limit = 1;
     jim_wide incr = 1;
     Jim_Obj *bodyObjPtr;
 
